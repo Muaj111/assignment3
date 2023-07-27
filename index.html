@@ -3,36 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fruit Burst</title>
+    <title>Assignment3</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/e7f64946bb.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    <header>
-       <div class=" flex bg-red-500 m-20 rounded-full items-center justify-between ">
-       <div class="items-center flex">
-            <ul class="flex gap-7 p-10 text-white">
-                <li>Home</li>
-                <li>About Us</li>
-                <li>Shop</li>
-                <li>All Fruits</li>
+<body class="p-10">
+    
+    <div class="navbar bg-white md:bg-fuchsia-500 rounded-[600px] ">
+        <div class="navbar-start hidden md:flex lg:flex">
+          <ul class="menu menu-horizontal px-1 text-white">
+            <li><a>Home</a></li>
+            <li><a>About Us</a></li>
+            <li><a>Shop</a></li>
+            <li><a>All Fruits</a></li>
+          </ul>
+        </div>
+        <div class="navbar-center p-5">
+          <div class="dropdown">
+            <label tabindex="0" class="btn btn-ghost md:hidden lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16"></path>
+              </svg>
+            </label>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a>Home</a></li>
+              <li><a>About Us</a></li>
+              <li><a>Shop</a></li>
+              <li><a>All Fruits</a></li>
             </ul>
-            </div>
-    <div>
-        <h2 class="text-center text-4xl extrabold text-white">Fruit Burst</h2></div>
-        <div class="search-container  p-10 ">
-            <input class="p-5 rounded-full" type="text" class="search-bar" placeholder="Search...">
-            
-          </div>
-
-       </div>
-
-    </header>
-    <main>
-
-    </main>
-    <footer>
-
-    </footer>
+          </div> 
+          <div class="gap-3 flex items-center">
+          <img class="" src="images/logo.png" alt=""><span class="text-black text-[22px] font-bold md:text-[40px] md:text-black">Fruit Burst</span></div>
+        </div>
+        <div class="navbar-end hidden lg:flex">
+          <input class="bg-white p-5 w-[100%] h-[30px] lg:w-[300px] md:w-[300px] rounded-[50px] text-black" type="text" placeholder="Search...">
+          <a class="relative -left-8 hover:cursor-pointer"><i class="fa-solid fa-magnifying-glass" style="color: #6c7a93;"></i></a>
+        </div>
+      </div>
+    
 </body>
 </html>
