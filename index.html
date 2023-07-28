@@ -198,108 +198,250 @@
     
        </section>
 
-        <section>
-          <div class="lg:flex gap-10 lg:pt-20">
-
-
-
-            <div class="card w-96 bg-base-100 shadow-xl">
-              <figure class="px-10 pt-10">
-                <img src="/images/fruit6.png" alt="Shoes" class="rounded-xl" />
-              </figure>
-              <div class="card-body items-center text-center">
-                <h2 class="card-title">12.90$ - 18.85</h2>
-               <p>Apples</p>
-
-               <div class="rating rating-lg">
-                <input type="radio" name="rating-9" class="rating-hidden" />
-                <input type="radio" name="rating-9" class="mask mask-star-2" />
-                <input type="radio" name="rating-9" class="mask mask-star-2" checked />
-                <input type="radio" name="rating-9" class="mask mask-star-2" />
-                <input type="radio" name="rating-9" class="mask mask-star-2" />
-                <input type="radio" name="rating-9" class="mask mask-star-2" />
-              </div>
-                <div class="card-actions">
-                  <button class="btn btn-primary">Buy Now</button>
-                </div>
-              </div>
+        <section class="my-8">
+          
+      <div class="grid w-full px-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+        <div class="card bg-[#FFF] border border-solid border-[#1212121A] shadow-xl">
+          <figure class="px-10 pt-10">
+            <img src="images/fruit6.png" alt="Shoes" class="rounded-xl">
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title text-[#121212]">12.90$ - 18.85$</h2>
+            <br>
+            <p>Apples</p>
+            <div class="rating">
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]">
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" checked="">
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]">
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]">
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]">
             </div>
-
-            <div class="card w-96 bg-base-100 shadow-xl">
-              <figure class="px-10 pt-10">
-                <img src="/images/fruit7.png" alt="Shoes" class="rounded-xl" />
-              </figure>
-              <div class="card-body items-center text-center">
-                <h2 class="card-title">12.90$ - 18.85</h2>
-                <p>Oranges</p>
-                <div class="rating rating-lg">
-                  <input type="radio" name="rating-9" class="rating-hidden" />
-                  <input type="radio" name="rating-9" class="mask mask-star-2" />
-                  <input type="radio" name="rating-9" class="mask mask-star-2" checked />
-                  <input type="radio" name="rating-9" class="mask mask-star-2" />
-                  <input type="radio" name="rating-9" class="mask mask-star-2" />
-                  <input type="radio" name="rating-9" class="mask mask-star-2" />
-                </div>
-                <div class="card-actions">
-                  <button class="btn btn-primary">Buy Now</button>
-                </div>
-              </div>
+            <div class="card-actions">
+              <!-- Open the modal using ID.showModal() method -->
+              <button class="text-[#F85559]" onclick="my_modal_1.showModal()">Details</button>
+              <dialog id="my_modal_1" class="modal">
+                <form method="dialog" class="modal-box bg-[#FFF]">
+                  <img class="px-[170px]" src="images/fruit6.png" alt="">
+                  <br>
+                  <h3 class="font-bold text-[#121212] text-lg">Apples</h3>
+                  <p class="py-4">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                  <div class="rating">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]"checked="">
+                  </div>
+                  <div>
+                    <br>
+                    <button class="btn text-black bg-fuchsia-500 border-none">Buy Now</button>
+                    <br>
+                  </div>
+                  <div class="modal-action">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button class="btn bg-white text-btn-pri border border-solid border-btn-pri">Close</button>
+                  </div>
+                </form>
+              </dialog>
             </div>
-
-            <div class="card w-96 bg-base-100 shadow-xl">
-              <figure class="px-10 pt-10">
-                <img src="/images/fruit8.png" alt="Shoes" class="rounded-xl" />
-              </figure>
-              <div class="card-body items-center text-center">
-                <h2 class="card-title">12.90$ - 18.85</h2>
-                <p>Red Dragons</p>
-                <div class="rating rating-lg">
-                  <input type="radio" name="rating-9" class="rating-hidden" />
-                  <input type="radio" name="rating-9" class="mask mask-star-2" />
-                  <input type="radio" name="rating-9" class="mask mask-star-2" checked />
-                  <input type="radio" name="rating-9" class="mask mask-star-2" />
-                  <input type="radio" name="rating-9" class="mask mask-star-2" />
-                  <input type="radio" name="rating-9" class="mask mask-star-2" />
-                </div>
-                <div class="card-actions">
-                  <button class="btn btn-primary">Buy Now</button>
-                </div>
-              </div>
-            </div>
-
-            <div class="card w-96 bg-base-100 shadow-xl">
-              <figure class="px-10 pt-10">
-                <img src="/images/fruit9.png" alt="Shoes" class="rounded-xl" />
-              </figure>
-              <div class="card-body items-center text-center">
-                <h2 class="card-title">12.90$ - 18.85</h2>
-               <p>Banana</p>
-               <div class="rating rating-lg">
-                <input type="radio" name="rating-9" class="rating-hidden" />
-                <input type="radio" name="rating-9" class="mask mask-star-2" />
-                <input type="radio" name="rating-9" class="mask mask-star-2" checked />
-                <input type="radio" name="rating-9" class="mask mask-star-2" />
-                <input type="radio" name="rating-9" class="mask mask-star-2" />
-                <input type="radio" name="rating-9" class="mask mask-star-2" />
-              </div>
-                <!-- Open the modal using ID.showModal() method -->
-<button class="btn" onclick="my_modal_1.showModal()">open modal</button>
-<dialog id="my_modal_1" class="modal">
-  <form method="dialog" class="modal-box">
-    <h3 class="font-bold text-lg">Hello!</h3>
-    <p class="py-4">Press ESC key or click the button below to close</p>
-    <div class="modal-action">
-      <!-- if there is a button in form, it will close the modal -->
-      <button class="btn">Close</button>
-    </div>
-  </form>
-</dialog>
-              </div>
-            </div>
-
-
           </div>
+        </div>
+        <div class="card bg-[#FFF] border border-solid border-[#1212121A] shadow-xl">
+          <figure class="px-10 pt-10">
+            <img src="images/fruit7.png" alt="Shoes" class="rounded-xl">
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title text-[#121212]">12.90$ - 18.85$</h2>
+            <br>
+            <p>Orange</p>
+            <div class="rating">
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]">
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]">
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]">
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]">
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]"checked="">
+            </div>
+            <div class="card-actions">
+              <!-- Open the modal using ID.showModal() method -->
+              <button class="text-[#F85559]" onclick="my_modal_2.showModal()">Details</button>
+              <dialog id="my_modal_2" class="modal">
+                <form method="dialog" class="modal-box bg-[#FFF]">
+                  <img class="px-[170px]" src="images/fruit7.png" alt="">
+                  <br>
+                  <h3 class="font-bold text-[#121212] text-lg">Orange</h3>
+                  <p class="py-4">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                  <div class="rating">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]"checked="">
+                  </div>
+                  <div>
+                    <br>
+                    <button class="btn text-black bg-fuchsia-500 border-none">Buy Now</button>
+                    <br>
+                  </div>
+                  <div class="modal-action">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button class="btn bg-white text-btn-pri border border-solid border-btn-pri">Close</button>
+                  </div>
+                </form>
+              </dialog>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-[#FFF] border border-solid border-[#1212121A] shadow-xl">
+          <figure class="px-10 pt-10">
+            <img src="images/fruit8.png" alt="Shoes" class="rounded-xl">
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title text-[#121212]">12.90$ - 18.85$</h2>
+            <br>
+            <p>Red Dragon</p>
+            <div class="rating">
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]">
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]">
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]">
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]">
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]"checked="">
+            </div>
+            <div class="card-actions">
+              <!-- Open the modal using ID.showModal() method -->
+              <button class="text-[#F85559]" onclick="my_modal_3.showModal()">Details</button>
+              <dialog id="my_modal_3" class="modal">
+                <form method="dialog" class="modal-box bg-[#FFF]">
+                  <img class="px-[170px]" src="images/fruit8.png" alt="">
+                  <br>
+                  <h3 class="font-bold text-[#121212] text-lg">Red Dragon</h3>
+                  <p class="py-4">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                  <div class="rating">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]"checked="">
+                  </div>
+                  <div>
+                    <br>
+                    <button class="btn text-black bg-fuchsia-500 border-none">Buy Now</button>
+                    <br>
+                  </div>
+                  <div class="modal-action">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button class="btn bg-white text-btn-pri border border-solid border-btn-pri">Close</button>
+                  </div>
+                </form>
+              </dialog>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-[#FFF] border border-solid border-[#1212121A] shadow-xl">
+          <figure class="px-10 pt-10">
+            <img src="images/fruit9.png" alt="Shoes" class="rounded-xl">
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title text-[#121212]">12.90$ - 18.85$</h2>
+            <br>
+            <p>Banana</p>
+            <div class="rating">
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]">
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]">
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]">
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]">
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]"checked="">
+            </div>
+            <div class="card-actions">
+              <!-- Open the modal using ID.showModal() method -->
+              <button class="text-[#F85559]" onclick="my_modal_4.showModal()">Details</button>
+              <dialog id="my_modal_4" class="modal">
+                <form method="dialog" class="modal-box bg-[#FFF]">
+                  <img class="px-[170px]" src="images/fruit9.png" alt="">
+                  <br>
+                  <h3 class="font-bold text-[#121212] text-lg">Banana</h3>
+                  <p class="py-4">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                  <div class="rating">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]"checked="">
+                  </div>
+                  <div>
+                    <br>
+                    <button class="btn text-black bg-fuchsia-500 border-none">Buy Now</button>
+                    <br>
+                  </div>
+                  <div class="modal-action">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button class="btn bg-white text-btn-pri border border-solid border-btn-pri">Close</button>
+                  </div>
+                </form>
+              </dialog>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center">
+        <br>
+        <button class="btn text-black bg-fuchsia-500 border-none">Shop All</button>
+        <br>
+      </div>
+    
         </section>
+
+
+
+      <div style="background-image: url('images/team.png'); background-size: 130%;" class="space-y-[20px] md:py-[10px] md:px-[20px] md:bg-no-repeat lg:py-[100px] lg:px-[80px]">
+        <div class="text-[#FFF] text-center">
+          <h1 class="text-2xl font-bold md:text-5xl md:font-extrabold">Meet the team section</h1>
+          <p class="font-medium">Contrary to popular belief, is not simply random text. It has roots in a piece of classical
+          Latin literature from 45 BC, making it over 2000 years old.</p>
+        </div>
+        <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
+          <div class="text-[#FFF] flex flex-col justify-center items-center">
+            <img class="rounded-full h-[50px] w-[50px] lg:h-[100px] lg:w-[100px]" src="images/member1.png" alt="">
+            <h3 class="text-[24px] font-bold">Awlad Hossain</h3>
+            <p class="font-medium">Fruits Expert</p>
+            <div>
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-square-twitter"></i>
+              <i class="fa-brands fa-linkedin"></i>
+            </div>
+          </div>
+          <div class="text-[#FFF] flex flex-col justify-center items-center">
+            <img class="rounded-full h-[50px] w-[50px] lg:h-[100px] lg:w-[100px]" src="images/member2.png" alt="">
+            <h3 class="text-[24px] font-bold">Safia Chowdhury</h3>
+            <p class="font-medium">Fruits Expert</p>
+            <div>
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-square-twitter"></i>
+              <i class="fa-brands fa-linkedin"></i>
+            </div>
+          </div>
+          <div class="text-[#FFF] flex flex-col justify-center items-center">
+            <img class="rounded-full h-[50px] w-[50px] lg:h-[100px] lg:w-[100px]" src="images/member3.png" alt="">
+            <h3 class="text-[24px] font-bold">Rokib Hossain</h3>
+            <p class="font-medium">Fruits Expert</p>
+            <div>
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-square-twitter"></i>
+              <i class="fa-brands fa-linkedin"></i>
+            </div>
+          </div>
+          <div class="text-[#FFF] flex flex-col justify-center items-center">
+            <img class="rounded-full h-[50px] w-[50px] lg:h-[100px] lg:w-[100px]" src="images/member4.png" alt="">
+            <h3 class="text-[24px] font-bold">Chaity</h3>
+            <p class="font-medium">Fruits Expert</p>
+            <div>
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-square-twitter"></i>
+              <i class="fa-brands fa-linkedin"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    
       
       </main>
       <footer>
